@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adminhtml>
+    <acl>
+        <resources>
+            
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <managemessages translate="title" module="managemessages">
+                                        <title>Manage messages</title>
+                                    </managemessages>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+            
+        </resources>
+    </acl>
+</adminhtml>

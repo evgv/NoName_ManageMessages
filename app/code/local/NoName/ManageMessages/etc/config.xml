@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <NoName_ManageMessages>
+          <version>1.0.0</version>
+        </NoName_ManageMessages>
+    </modules>
+    <global>
+        <models>
+            <managemessages>
+                <class>NoName_ManageMessages_Model</class>
+            </managemessages>
+        </models>
+        <blocks>
+            <managemessages>
+                <class>NoName_ManageMessages_Block</class>
+            </managemessages>
+            <core>
+                <rewrite>
+                    <messages>NoName_ManageMessages_Block_Core_Messages</messages>
+                </rewrite>
+            </core>
+        </blocks>
+    </global>
+    <default>
+        <managemessages>
+            <general>
+                <dissalow>0</dissalow>
+                <allowed>error,warning,notice,success</allowed>
+            </general>
+        </managemessages>
+    </default>
+</config>
